@@ -43,13 +43,13 @@
     <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide</artifactId>
-      <version>5.18.0</version>
+      <version>5.19.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.selenide</groupId>
       <artifactId>selenide-selenoid</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
