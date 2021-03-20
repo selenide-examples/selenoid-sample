@@ -37,19 +37,19 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.7.0</version>
+      <version>5.7.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide</artifactId>
-      <version>5.19.0</version>
+      <version>5.20.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.selenide</groupId>
       <artifactId>selenide-selenoid</artifactId>
-      <version>1.0.1</version>
+      <version>1.1.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
