@@ -20,7 +20,9 @@ class SelenoidExtension implements BeforeAllCallback  {
     options.put("enableVideo", true);
     options.put("enableLog", true);
 
-    Configuration.browserCapabilities = new ChromeOptions();
+    ChromeOptions capabilities = new ChromeOptions();
+    capabilities.setBrowserVersion("100.0");
+    Configuration.browserCapabilities = capabilities;
     Configuration.browserCapabilities.setCapability("selenoid:options", options);
   }
 }

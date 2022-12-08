@@ -15,4 +15,7 @@ Type from command line to run tests on your machine:
 mvn test
 ```
 
+You need to have "chrome" image of version 100.0
+For Mac M1, `sskorol/selenoid_chromium_vnc:100.0` can be used. 
+
 _Feel free to share your feedback!_
