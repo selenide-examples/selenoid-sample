@@ -16,14 +16,14 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          cache: 'gradle'
-          java-version: '11'
+          cache: 'maven'
+          java-version: '8'
       - name: Build
-        run: ./gradlew clean build -x test
+        run: mvn clean build -DskipTests
       - name: Run tests
-        run: ./gradlew check --info
+        run: mvn test
       - uses: actions/upload-artifact@v3
         if: failure()
         with:
           name: test-report
-          path: build/reports/
+          path: target/surefire-reports/
