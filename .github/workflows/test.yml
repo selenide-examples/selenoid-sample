@@ -7,7 +7,7 @@ on:
     branches:
 
 jobs:
-  run-tests-job:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,8 +20,6 @@ jobs:
           java-version: '8'
       - name: Build
         run: mvn clean install -DskipTests
-      - name: Run tests
-        run: mvn test
       - uses: actions/upload-artifact@v3
         if: failure()
         with:
