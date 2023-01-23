@@ -19,7 +19,7 @@ jobs:
           cache: 'maven'
           java-version: '8'
       - name: Build
-        run: mvn clean build -DskipTests
+        run: mvn clean install -DskipTests
       - name: Run tests
         run: mvn test
       - uses: actions/upload-artifact@v3
