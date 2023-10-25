@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>How To Copy to Clipboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<p>Click on the button to copy the text from the text field.</p>
+
+<input type="text" value="Hello World" id="myInput" style="width:auto">
+
+<div>
+  <button onclick="myFunction()">
+    <span id="myTooltip">Copy to clipboard</span>
+    Copy text
+  </button>
+</div>
+
+<script>
+  function myFunction() {
+    const copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value)
+    const tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied: " + copyText.value;
+  }
+</script>
+</body>
+</html>
