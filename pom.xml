@@ -37,7 +37,7 @@
     <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide-selenoid</artifactId>
-      <version>7.2.0</version>
+      <version>7.2.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
