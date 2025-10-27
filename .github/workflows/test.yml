@@ -20,7 +20,7 @@ jobs:
           java-version: '17'
       - name: Build
         run: mvn clean install -DskipTests
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: failure()
         with:
           name: test-report
